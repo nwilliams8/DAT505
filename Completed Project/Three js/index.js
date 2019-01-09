@@ -1,5 +1,5 @@
 
-var leaves = 1200;
+var rainDrops = 1200;
 var planes = [];
 var backcolor = (0xbfe3dd);
 var object2 = 0;
@@ -7,7 +7,6 @@ var speed = 0;
 var speed2 = 0;
 var clouds = []
 var intensity = 2;
-var cloud = 10
 function init() {
   container = document.createElement( 'div' );
   document.body.appendChild( container );
@@ -27,12 +26,7 @@ function init() {
   var dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
 	scene.add( dirLight );
 
-  ssaoPass = new THREE.SSAOPass( scene, camera, window.innerWidth, window.innerHeight );
-	ssaoPass.kernelRadius = 16;
-	ssaoPass.renderToScreen = true;
 
-  effectComposer = new THREE.EffectComposer( renderer );
-	effectComposer.addPass( ssaoPass );
   // model
   var onProgress = function ( xhr ) {
     if ( xhr.lengthComputable ) {
@@ -97,7 +91,7 @@ function init() {
         side: THREE.DoubleSide
       } );
     var rand = Math.random;
-    for ( var i = 0; i < leaves; i ++ ) {
+    for ( var i = 0; i < rainDrops; i ++ ) {
       var plane = new THREE.Mesh( planePiece, planeMat );
       plane.rotation.set( rand(), rand(), rand() );
       plane.rotation.dx = rand() * 0.1;
@@ -179,7 +173,6 @@ function init() {
     scene.background = new THREE.Color( backcolor );
     hemiLight.color = new THREE.Color(backcolor)
   }
-  renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio( window.devicePixelRatio );
   renderer.setSize( window.innerWidth, window.innerHeight );
   container.appendChild( renderer.domElement );
@@ -195,7 +188,6 @@ function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerHeight );
-  ssaoPass.setSize( window.innerWidth, window.innerHeight );
 }
 
 
@@ -221,16 +213,7 @@ function render() {
     }
   })
 
-//  clouds.forEach(function(c,i){
-//    object2.position.x += speed2 / 3
-//    if (object2.position.x < -50){
-//      object2.position.x += 100
-//    } else if (object2.position.x > 50){
-//      object2.position.x -= 100
-//    }
-//  })
-
-  renderer.render( scene, camera );
+    renderer.render( scene, camera );
 }
 init();
 animate();
