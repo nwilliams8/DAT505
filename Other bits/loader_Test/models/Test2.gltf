@@ -1,0 +1,279 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 1212,
+            "max" : [
+                735
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 736,
+            "max" : [
+                14.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.000004529953003,
+                -1.0,
+                -15.090177536010742
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 736,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 36,
+            "max" : [
+                23
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0,
+                0.05528859421610832,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                0.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2424,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8832,
+            "byteOffset" : 2424,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8832,
+            "byteOffset" : 11256,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 20088,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 20160,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 20448,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 20736,
+            "uri" : "Test2.bin"
+        }
+    ],
+    "extensionsRequired" : [
+        "KHR_materials_pbrSpecularGlossiness"
+    ],
+    "extensionsUsed" : [
+        "KHR_materials_pbrSpecularGlossiness"
+    ],
+    "materials" : [
+        {
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {}
+        },
+        {
+            "extensions" : {
+                "KHR_materials_pbrSpecularGlossiness" : {
+                    "diffuseFactor" : [
+                        0.0981009304523468,
+                        0.8584246039390564,
+                        1.0,
+                        1.0
+                    ],
+                    "glossinessFactor" : 0.5363640189170837,
+                    "specularFactor" : [
+                        0.004478388000279665,
+                        1.0,
+                        0.8585525155067444
+                    ]
+                }
+            },
+            "name" : "Material.003"
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1
+                    },
+                    "indices" : 0,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 5,
+                        "POSITION" : 4
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "scale" : [
+                8.155326843261719,
+                8.155326843261719,
+                8.155328750610352
+            ],
+            "translation" : [
+                52.157615661621094,
+                15.171443939208984,
+                30.085556030273438
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Cube",
+            "scale" : [
+                8.155324935913086,
+                36.0836296081543,
+                8.155324935913086
+            ],
+            "translation" : [
+                -62.74457550048828,
+                9.377096176147461,
+                36.93693542480469
+            ]
+        },
+        {
+            "name" : "Lamp",
+            "rotation" : [
+                0.16907578706741333,
+                0.7558802962303162,
+                -0.27217134833335876,
+                0.5709474682807922
+            ],
+            "scale" : [
+                8.155327796936035,
+                8.155326843261719,
+                8.155328750610352
+            ],
+            "translation" : [
+                24.38966178894043,
+                19.740028381347656,
+                -31.186166763305664
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Plane",
+            "scale" : [
+                68.43805694580078,
+                68.43805694580078,
+                68.43805694580078
+            ],
+            "translation" : [
+                -8.853443145751953,
+                -28.40787124633789,
+                -22.986370086669922
+            ]
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                3,
+                1,
+                2,
+                0
+            ]
+        }
+    ]
+}
