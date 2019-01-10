@@ -2,7 +2,7 @@ This project is a city model loading using obj and mtl loader, the user can inte
 
 To explore this project you can use the orbit controls which operate as follows: hold click and move the mouse to rotate the model, hold right click and move the mouse to pan across the model and scroll the mouse to zoom in and out of the model. You can also use the dat gui menu, as mentioned earlier, to change the conditions surrounding the city model.
 
-![alt text](https://github.com/nwilliams8/DAT505/master/CompletedProject/Threejs/Capture.JPG)
+![alt text](https://github.com/nwilliams8/DAT505/blob/master/Completed%20Project/Three%20js/Capture.JPG)
 
 https://github.com/nwilliams8/DAT505  
 https://codepen.io/nwilliams8/#
