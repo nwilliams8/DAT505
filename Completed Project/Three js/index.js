@@ -17,7 +17,7 @@ function init() {
   scene.background = new THREE.Color( backcolor );
 
   scene.add( camera );
-  renderer = new THREE.WebGLRenderer();
+  renderer = new THREE.WebGLRenderer({antialias: true});
 
   var hemiLight = new THREE.HemisphereLight(backcolor, 0x444444, intensity)
   hemiLight.position.set (0, 20, 0);
